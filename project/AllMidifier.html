@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Junseong Park's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    #skills ul {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 700px;
+    }
+
+    #skills li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: #000000;
+        background: #e4e4ea;
+        list-style: none;
+        font-size: 1.2em;
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <div class="w3-main">
+        <div class="w3-center">
+            <h4>PROJECTS</h4>
+            <h2 class="w3-text-teal">
+                <b>스마트 제가습기</b>
+            </h2>
+        </div>
+
+        <div class="w3-container w3-center">
+            <hr style="border-top: 1px solid #5CD1E5">
+        </div>
+
+        <div class="w3-row w3-padding-16">
+            <div class="w3-third w3-container">
+                <p class="w3-center">
+                    <img src="../image/_overview/제가습기.png" style="width: 100%">
+                </p>
+            </div>
+            <div class="w3-rest w3-container">
+                <ul>
+                    <li><b>기획 의도 : </b>디스플레이를 통해 온/습도를 확인하고
+                        제습, 가습을 제어할 수 있는 스마트 제가습기</li>
+                    <li><b>기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;간
+                            : </b>2019.10.01 ~ 2019.10.24</li>
+                    <li><b>총 인원수 : </b> 5명</li>
+                    <li><b>개발 도구 : </b> PyCharm, Arduino IDE, Raspbian OS</li>
+                    <li><b>사용 언어 : </b> Python, C</li>
+                    <li><b>사용 H/W</b>
+                        <ul>
+                            <li>Raspberry Pi</li>
+                            <li>Arduino Nano</li>
+                            <li>릴레이 모듈</li>
+                            <li>온습도 센서</li>
+                            <li>TFT 터치스크린 (3.5inch)</li>
+                            <li>LED</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-container w3-center">
+            <hr style="border-top: 1px solid #5CD1E5">
+        </div>
+
+        <div class="w3-row w3-padding-16">
+            <h2 class="w3-center">
+                <b>EXPLANATION</b>
+            </h2>
+            <ul style="list-style-position: inside">
+                <li>디스플레이를 통해 온습도를 확인할 수 있습니다.</li>
+                <li>디스플레이 터치를 통해 제습, 가습을 실행할 수 있습니다.</li>
+                <li>일정 습도 이상/이하가 될 경우 자동으로 제습/가습 기능을 실행합니다.</li>
+                <li>디스플레이 터치를 통해 LED를 제어할 수 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="w3-container w3-center">
+            <hr style="border-top: 1px solid #5CD1E5">
+        </div>
+
+        <div class="w3-container">
+            <h2 class="w3-center">
+                <b>VIDEOS</b>
+            </h2>
+            <div class="w3-center w3-padding-64">
+                <iframe width="100%" height="" src="https://www.youtube.com/embed/9LorVgZ03l0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img id="img01" style="width: 100%">
+        </div>
+    </div>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
