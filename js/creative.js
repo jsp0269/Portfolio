@@ -1,3 +1,10 @@
+$(document).ready( function() {
+
+  $("#cont").load("project/Ariby.html");  // 원하는 파일 경로를 삽입하면 된다
+  $("#cont").load("project/Bike.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+  
+  });
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -42,7 +49,18 @@
   // Modal
   $('a[href="#pro-allmidifier"]').click(function(event) {
     event.preventDefault();
-
+    $(this).modal({
+      fadeDuration: 250
+    });
+  });
+  $('a[href="#pro-ariby"]').click(function(event) {
+    event.preventDefault();
+    $(this).modal({
+      fadeDuration: 250
+    });
+  });
+  $('a[href="#pro-bike"]').click(function(event) {
+    event.preventDefault();
     $(this).modal({
       fadeDuration: 250
     });
