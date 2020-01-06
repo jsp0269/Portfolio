@@ -1,15 +1,24 @@
-$(document).ready( function() {
+$(document).ready(function () {
 
-  $("#cont").load("project/Ariby.html");  // 원하는 파일 경로를 삽입하면 된다
-  $("#cont").load("project/Bike.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
-  
-  });
+  $("#inc-ariby").load("project/Ariby.html");
+  $("#inc-bicycle").load("project/Bike.html");
+  $("#inc-elcollector").load("project/ELCollector.html");
+  $("#inc-gaint").load("project/Gaint.html");
+  $("#inc-itus").load("project/ITus.html");
+  $("#inc-library").load("project/Library.html");
+  $("#inc-safebox").load("project/SafeBox.html");
+  // 이하 남음
+  $("#inc-set").load("project/Set.html");
+  $("#inc-snackpop").load("project/SnackPop.html");
+  $("#inc-allmidifier").load("project/AllMidifier.html");
+  $("#inc-farmcar").load("project/FarmCar.html");
+});
 
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -23,7 +32,7 @@ $(document).ready( function() {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -34,7 +43,7 @@ $(document).ready( function() {
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
     } else {
@@ -47,22 +56,11 @@ $(document).ready( function() {
   $(window).scroll(navbarCollapse);
 
   // Modal
-  $('a[href="#pro-allmidifier"]').click(function(event) {
-    event.preventDefault();
-    $(this).modal({
-      fadeDuration: 250
-    });
-  });
-  $('a[href="#pro-ariby"]').click(function(event) {
-    event.preventDefault();
-    $(this).modal({
-      fadeDuration: 250
-    });
-  });
-  $('a[href="#pro-bike"]').click(function(event) {
-    event.preventDefault();
-    $(this).modal({
-      fadeDuration: 250
-    });
+  $('a[href]').click(function (event) {
+    var mlink = this.toString().substr(this.toString().indexOf('#'));
+      event.preventDefault();
+      $(mlink).modal({
+        fadeDuration: 250
+      });
   });
 })(jQuery); // End of use strict
