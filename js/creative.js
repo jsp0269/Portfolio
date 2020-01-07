@@ -7,8 +7,7 @@ $(document).ready(function () {
   $("#inc-itus").load("project/ITus.html");
   $("#inc-library").load("project/Library.html");
   $("#inc-safebox").load("project/SafeBox.html");
-  // 이하 남음
-  $("#inc-set").load("project/Set.html");
+  $("#inc-set").load("project/GeniusSet.html");
   $("#inc-snackpop").load("project/SnackPop.html");
   $("#inc-allmidifier").load("project/AllMidifier.html");
   $("#inc-farmcar").load("project/FarmCar.html");
@@ -55,12 +54,33 @@ $(document).ready(function () {
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+
   // Modal
   $('a[href]').click(function (event) {
     var mlink = this.toString().substr(this.toString().indexOf('#'));
+    if (mlink.search("#pro") != -1) {
       event.preventDefault();
       $(mlink).modal({
         fadeDuration: 250
       });
+    }
   });
 })(jQuery); // End of use strict
+
+// Filter
+function FilterCtg(evt, ctgname) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("ctg-all");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" filter-active", "");
+  }
+  x = document.getElementsByClassName(ctgname);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "block";
+  }
+  evt.currentTarget.className += " filter-active";
+}

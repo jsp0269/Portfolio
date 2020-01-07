@@ -9509,7 +9509,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(58, 101, 244, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -9575,5 +9575,34 @@ header.masthead h1 {
 }
 
 #portfolio {
-  background-color: #365fb9;
+  background-color: #1c7e8d;
+  padding-top: 8rem;
+}
+
+.filter {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.filter li {
+  display: inline-block;
+}
+
+.filter li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.filter li a:hover:not(.active) {
+  background-color: rgb(61, 0, 202);
+}
+
+.filter-active {
+  background-color: rgb(61, 0, 202);
 }

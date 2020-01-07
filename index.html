@@ -183,31 +183,46 @@
   </section>
 
   <!-- Project -->
-  <section class="page-section" id="portfoli">
+  <section id="portfolio">
     <div class="container">
       <h2 class="text-center mt-0 text-white">Project</h2>
-      <hr class="divider light my-4">
       <div>
-        <ul>
-          <li>All</li>
-          <li>Web</li>
-          <li>Embedded</li>
-          <li>BigData</li>
-          <li>Game</li>
-          <li>Simulation</li>
-          <li>ETC</li>
-        </ul>
+        <h6 style="margin-bottom:0">
+          <ul class="filter">
+            <li><a class="tablink filter-active" href="javascript:void(0)"
+                onclick="FilterCtg(event, 'ctg-all');">All</a></li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-web');">Web</a></li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-embedded');">Embedded</a>
+            </li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-bigdata');">BigData</a></li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-game');">Game</a></li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-simul');">Simulation</a>
+            </li>
+            <li><a class="tablink" href="javascript:void(0)" onclick="FilterCtg(event, 'ctg-etc');">ETC</a></li>
+          </ul>
+        </h6>
       </div>
     </div>
-  </section>
 
-  <!-- project Section -->
-  <section id="portfolio">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-game">
+          <a class="portfolio-box" href="#pro-set">
+            <img class="img-fluid" src="img/project/thumbnails/Set.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Game
+              </div>
+              <div class="project-name">
+                더 지니어스 - 결합
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-embedded">
           <a class="portfolio-box" href="#pro-allmidifier">
-            <img class="img-fluid" src="img/project/_overview/Allmidifier.png" alt="">
+            <img class="img-fluid" src="img/project/thumbnails/Allmidifier.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Embedded
@@ -218,97 +233,175 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-embedded ctg-simul ctg-game">
           <a class="portfolio-box" href="#pro-ariby">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <img class="img-fluid" src="img/project/thumbnails/Ariby.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                Embedded, Simulation, Game
               </div>
               <div class="project-name">
-                Project Name
+                Ariby
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-game ctg-simul">
+          <a class="portfolio-box" href="#pro-ready">
+            <img class="img-fluid" src="img/project/thumbnails/Disaster.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Game, Simulation
+              </div>
+              <div class="project-name">
+                성공회대 안전교육 VR
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-Game">
+          <a class="portfolio-box" href="#pro-ready">
+            <img class="img-fluid" src="img/project/thumbnails/Summoner.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Game
+              </div>
+              <div class="project-name">
+                Summoner VR
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-bigdata">
           <a class="portfolio-box" href="#pro-bike">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <img class="img-fluid" src="img/project/thumbnails/Bike.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Category
+                BigData
               </div>
               <div class="project-name">
-                Project Name
+                서울특별시 자전거교통사고 분석
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="#pro-elcollector">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="#pro-gaint">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="#pro-itus">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-etc">
           <a class="portfolio-box" href="#pro-library">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <img class="img-fluid" src="img/project/thumbnails/Library.png" alt="">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
-                Category
+                ETC
               </div>
               <div class="project-name">
-                Project Name
+                도서관리 시스템
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-game">
+          <a class="portfolio-box" href="#pro-ready">
+            <img class="img-fluid" src="img/project/thumbnails/EscapeRoom.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Game
+              </div>
+              <div class="project-name">
+                Escape Room
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-embedded">
+          <a class="portfolio-box" href="#pro-farmcar">
+            <img class="img-fluid" src="img/project/thumbnails/FarmCar.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Embedded
+              </div>
+              <div class="project-name">
+                Farm Car
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-web">
+          <a class="portfolio-box" href="#pro-itus">
+            <img class="img-fluid" src="img/project/thumbnails/ITus.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Web
+              </div>
+              <div class="project-name">
+                ITus
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-embedded">
           <a class="portfolio-box" href="#pro-safebox">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <img class="img-fluid" src="img/project/thumbnails/SafeBox.png" alt="">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
-                Category
+                Embedded
               </div>
               <div class="project-name">
-                Project Name
+                Safe Box
               </div>
             </div>
           </a>
         </div>
+        
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-game">
+          <a class="portfolio-box" href="#pro-snackpop">
+            <img class="img-fluid" src="img/project/thumbnails/SnackPop.png" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Game
+              </div>
+              <div class="project-name">
+                Snack Pop
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-game ctg-simul">
+          <a class="portfolio-box" href="#pro-elcollector">
+            <img class="img-fluid" src="img/project/thumbnails/EL_Collector.png" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Game, Simulation
+              </div>
+              <div class="project-name">
+                EL Collector
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 ctg-all ctg-web">
+          <a class="portfolio-box" href="#pro-gaint">
+            <img class="img-fluid" src="img/project/thumbnails/GaInt.png" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Web
+              </div>
+              <div class="project-name">
+                GaInt
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -336,6 +429,10 @@
   <div id="inc-set"></div>
   <div id="inc-snackpop"></div>
   <div id="inc-allmidifier"></div>
+  <div id="inc-farmcar"></div>
+  <div id="pro-ready" class="text-center modal">
+    <h2>준비중입니다.</h2>
+  </div>
 
 
   <!-- Bootstrap core JavaScript -->
