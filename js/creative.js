@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  $("#inc-allmidifier").load("project/AllMidifier.html");
   $("#inc-ariby").load("project/Ariby.html");
   $("#inc-bicycle").load("project/Bike.html");
   $("#inc-elcollector").load("project/ELCollector.html");
@@ -9,8 +9,10 @@ $(document).ready(function () {
   $("#inc-safebox").load("project/SafeBox.html");
   $("#inc-set").load("project/GeniusSet.html");
   $("#inc-snackpop").load("project/SnackPop.html");
-  $("#inc-allmidifier").load("project/AllMidifier.html");
   $("#inc-farmcar").load("project/FarmCar.html");
+  $("#inc-escaperoom").load("project/EscapeRoom.html");
+  $("#inc-summoner").load("project/SummonerVR.html");
+  $("#inc-disaster").load("project/Disaster.html");
 });
 
 (function ($) {

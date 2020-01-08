@@ -9437,16 +9437,16 @@ hr.sky {
   }
   #mainNav.navbar-scrolled {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: rgba(90, 117, 133, 0.445);
+    background-color: rgb(70, 70, 70);
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #212529;
+    color: #ffffff;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #3a84f4;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #ffffff;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #3a84f4;
