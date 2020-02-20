@@ -1,6 +1,6 @@
 # Junseong Park's Portfolio Web[Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
 
-**[View Page](https://jsp0269.github.io)**
+**[View Page](https://jsp0269.github.io/portfolio)**
 
 ## License
 Theme : [Start Bootstrap - Creative](http://startbootstrap.com/template-overviews/creative/)
